@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mainDiv{
+    background-image: url(./hero.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border : 2px solid red */
+}
+.centerDiv{
+    height: 274px;
+    width: 625px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    /* border : 2px solid red */
+
+}
+.centerDiv h1{
+    font-size: 70px;
+    padding-bottom: 50px;
+    color: #102a42;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.backColor{
+   position: absolute;
+   inset: 0;
+   background-color: #49a6e9 !important;
+   opacity: 0.6;
+}
+.hidden{
+    display: none !important;
+}
+
+.clickButton{
+    letter-spacing: 5px;
+    font-size: large;
+    background-color: #49a6e9 ;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: none;
+}
+.popUPDiv{
+    position: absolute;
+    inset: 0;
+    /* border : 2px solid red; */
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border-radius: 10px;
+
+
+
+}
+.crossImg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    scale: 0.8;
+    transition: all 0.8s;
+}
+.crossImg:hover{
+    scale: 1;
+
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .mainDiv{
+        background-image: url(./hero.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border : 2px solid red */
+        
+    }
+
+
+    .centerDiv{
+        width: 280px;
+        height: 400px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 10px;
+        /* border : 2px solid red */
+    
+    }
+    .centerDiv h1{
+        font-size: 30px;
+        padding-bottom: 50px;
+        color: #102a42;
+        font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .clickButton{
+        letter-spacing: 5px;
+        font-size: small;
+        background-color: #49a6e9 ;
+        color: white;
+        text-transform: uppercase;
+        padding: 5px 15px;
+        border-radius: 8px;
+        border: none;
+    }
+    .popUPDiv{
+        position: absolute;
+        inset: 0;
+        /* border : 2px solid red; */
+        z-index: 1;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border-radius: 10px;
+    
+    
+    
+    }
+    .crossImg{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        height: 30px;
+        width: 30px;
+        scale: 0.8;
+        transition: all 0.8s;
+    }
+
+
+}
